@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Sketch</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+        <script src="plot.js"></script>
+    </head>
+
+    <body>
+        <div class="app">
+            <div id="canvas-container"></div>
+            <div id="table-container">
+                <div id="buttons">
+                    <button class="button" id="startBtn">Start</button>
+                    <button class="button" id="resetBtn">Reset</button>
+                    <button class="button button-clicked" id="tableBtn">Table</button>
+                    <button class="button button-clicked" id="chartBtn">Charts</button>
+                </div>
+                <div id="table-div">
+                    <table id="table">
+                        <colgroup>
+                            <col style="width: 10%" />
+                            <col style="width: 18%" />
+                            <col style="width: 18%" />
+                            <col style="width: 18%" />
+                            <col style="width: 18%" />
+                            <col style="width: 18%" />
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th>Lp.</th>
+                                <th>S [cm]</th>
+                                <th>∆x [cm]</th>
+                                <th>t [s]</th>
+                                <th>∆t [s]</th>
+                                <th>V [cm/s]</th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- <div id="chart-container">
+                <div id="chart"></div>
+            </div> -->
+        </div>
+        <script src="sketch.js"></script>
+    </body>
+</html>
